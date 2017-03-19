@@ -1,0 +1,218 @@
+<section class="container-fluid casa-body">
+  <section class="row">
+    <section class="col-xs-12">
+      <h2 class="tool-header">Release Generator</h2>
+    </section>
+  </section>
+  <form method="post" action="generate" target="_blank">
+    <div class="panel panel-casa">
+      <section class="panel-heading">
+        <h3 class="panel-title">Adult Information:</h3>
+      </section>
+      <section class="panel-body">
+          <div class="row">
+            <div class="col-xs-2">
+              <label for="adultName">Name:</label>
+            </div>
+            <div class="col-xs-10">
+              <input type="text" class="form-control" placeholder="Adult's Name" name="adultName" id="adultName"/>
+            </div>
+          </div>
+        <div class="row">
+          <div class="col-xs-2">
+            <label for="address">Address:</label>
+          </div>
+          <div class="col-xs-10">
+            <input type="text" class="form-control" placeholder="Address" name="address" id="address"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2">
+            <label for="city">City:</label>
+          </div>
+          <div class="col-xs-4">
+            <input type="text" class="form-control" placeholder="City" name="city" id="city"/>
+          </div>
+          <div class="col-xs-1">
+            <label for="state">State:</label>
+          </div>
+          <div class="col-xs-1">
+            <input type="text" class="form-control" placeholder="State" name="state" value="NH" id="state"/>
+          </div>
+          <div class="col-xs-1">
+            <label for="zipCode">Zip Code:</label>
+          </div>
+          <div class="col-xs-3">
+            <input type="text" class="form-control" placeholder="Zip Code" name="zipCode" id="zipCode"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2">
+            <label>Release for talking:</label>
+          </div>
+          <div class="col-xs-10">
+            <label class="checkbox-inline">
+              <input type="checkbox" name="adultMentalHealth" value="yes"> Mental Health Treatment
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="adultMedicalCare" value="yes"> Medical Care
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-10 col-xs-offset-2">
+            <label class="checkbox-inline">
+              <input type="checkbox" name="adultSubstanceAbuseTreatment" value="yes"> Substance Abuse Treatment
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="adultHomeBasedCounseling" value="yes"> Home-based Counseling
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-1 col-xs-offset-2">
+            <label for="adultOtherInformation">Other:</label>
+          </div>
+          <div class="col-xs-9">
+            <input type="text" class="form-control" placeholder="Other information to release" name="adultOtherInformation" id="adultOtherInformation"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2">
+            <label>Records release:</label>
+          </div>
+          <div class="col-xs-10">
+            <label class="checkbox-inline">
+              <input type="checkbox" name="adultMentalHealthEvaluations" value="yes"> Mental Health Evaluation(s)
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="adultHomeBasedCounselingEvaluations" value="yes"> Home-based Counseling Evaluation(s)
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2 col-xs-offset-2">
+            <label class="checkbox-inline">
+              <input type="checkbox" name="adultSubstanceAbuseEvaluations" value="yes"> Substance Abuse Evaluation(s)
+            </label>
+          </div>
+          <div class="col-xs-1">
+            <label for="adultOtherRecordRelease">Other:</label>
+          </div>
+          <div class="col-xs-7">
+            <input type="text" class="form-control" placeholder="Other records to release" name="adultOtherRecordRelease" id="adultOtherRecordRelease"/>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="panel panel-casa">
+      <section class="panel-heading">
+        <h3 class="panel-title">Release to:</h3>
+      </section>
+      <section class="panel-body">
+        <div class="row">
+          <div class="col-xs-2">
+            <label for="releaseName">Name:</label>
+          </div>
+          <div class="col-xs-10">
+            <input type="text" class="form-control" placeholder="Name of person releasing information" name="releaseName" id="releaseName"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2">
+            <label for="releaseOrganization">Organization:</label>
+          </div>
+          <div class="col-xs-10">
+            <input type="text" class="form-control" placeholder="Name of organization releasing information" name="releaseOrganization" id="releaseOrganization"/>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="panel panel-casa">
+      <section class="panel-heading">
+        <h3 class="panel-title">Child's Information: (if applicable)</h3>
+      </section>
+      <section class="panel-body">
+        <div class="row">
+          <div class="col-xs-2">
+            <label for="childName">Child's Name:</label>
+          </div>
+          <div class="col-xs-10">
+            <input type="text" class="form-control" placeholder="Child's name" name="childName" id="childName"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2">
+            <label>Release for talking:</label>
+          </div>
+          <div class="col-xs-10">
+            <label class="checkbox-inline">
+              <input type="checkbox" name="childMentalHealth" value="yes"> Mental Health Treatment
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="childMedicalCare" value="yes"> Medical Care
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-1 col-xs-offset-2">
+            <label for="childOtherInformation">Other:</label>
+          </div>
+          <div class="col-xs-9">
+            <input type="text" class="form-control" placeholder="Other information to release" name="childOtherInformation" id="childOtherInformation"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2">
+            <label>Records release:</label>
+          </div>
+          <div class="col-xs-10">
+            <label class="checkbox-inline">
+              <input type="checkbox" name="childMentalHealthRecords" value="yes"> Mental Health
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="childMedicalCareRecords" value="yes"> Medical Care
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-1 col-xs-offset-2">
+            <label for="childOtherInformationRecords">Other:</label>
+          </div>
+          <div class="col-xs-9">
+            <input type="text" class="form-control" placeholder="Other records to release" name="childOtherInformationRecords" id="childOtherInformationRecords" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-offset-2 col-xs-10">
+            <label class="checkbox-inline">
+              <input type="checkbox" name="childIsMale" value="yes"> Son
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="childIsFemale" value="yes"> Daughter
+            </label>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="panel panel-casa">
+      <section class="panel-heading">
+        <h3 class="panel-title">Advanced:</h3>
+      </section>
+      <section class="panel-body">
+        <div class="row">
+          <div class="col-xs-12">
+            <label class="checkbox-inline">
+              <input type="checkbox" name="includeLetterHead" value="yes" checked>Include CASA Letterhead
+            </label>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <button class="btn btn-casa">Generate</button>
+      </div>
+    </div>
+  </form>
+</section>

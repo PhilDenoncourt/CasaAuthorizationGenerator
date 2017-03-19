@@ -1,0 +1,31 @@
+.thing-form {
+  margin: 20px 0;
+}
+
+$casa-color1:         #001547 !default;
+$casa-color2:         #D4141D !default;
+
+.casa-body {
+  color:#001547;
+  background-color:white;
+}
+
+.tool-header {
+  background-color: $casa-color2;
+  color:white;
+  border-radius: 4px;
+  padding:5px;
+}
+
+.panel-casa {
+  @include panel-variant($casa-color1, $panel-primary-text, $casa-color1, $panel-primary-border);
+}
+.btn-casa {
+  @include button-variant(white, $casa-color1, $casa-color2);
+}
+.panel input {
+  color:#D4141D;
+}
+.row {
+  padding-bottom: 10px;
+}
